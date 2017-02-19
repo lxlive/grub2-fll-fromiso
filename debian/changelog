@@ -1,0 +1,252 @@
+grub2-fll-fromiso (0.3.12.1) unstable; urgency=medium
+
+  * rebuild for lxliveiso
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 04 Feb 2017 17:36:49 +0100
+
+grub2-fll-fromiso (0.3.12) unstable; urgency=medium
+
+  [ Stefan Lippers-Hollmann ]
+  * NOT RELEASED YET
+
+  [ Alf Gaida ]
+  * full back to upstream, only siduction- in configuration remains
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 25 Jun 2016 19:00:59 +0200
+
+grub2-fll-fromiso (0.3.11) unstable; urgency=medium
+
+  * query file names for kernel/ initrd via RockRidge, before falling
+    back to plain ISO9660.
+  * convert to machine readable copyright.
+  * update mail addresses.
+  * bump standards version to 3.9.6, no changes necessary.
+  * add explicit license header to grub2-fll-portable-efi.
+  * use normal indentation levels for grub2-fll-portable-efi.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 02 Jan 2015 18:44:29 +0100
+
+grub2-fll-fromiso (0.3.10) unstable; urgency=medium
+
+  * fix d/control syntax for Uploaders.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 01 Sep 2014 22:45:04 +0200
+
+grub2-fll-fromiso (0.3.9) unstable; urgency=medium
+
+  * add grub-efi-ia32 to options for depends
+  * add initial new grub2-fll-portable-efi binary package
+
+ -- Niall Walsh <niallwalsh@celtux.org>  Mon, 01 Sep 2014 15:15:39 +0100
+
+grub2-fll-fromiso (0.3.8) unstable; urgency=medium
+
+  * supply systemd.show_status=1 by default.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Jun 2014 04:22:08 +0200
+
+grub2-fll-fromiso (0.3.7) unstable; urgency=low
+
+  * bump standards version to 3.9.5, no changes necessary.
+  * debian/control: switch Vcs tags to github.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Apr 2014 22:50:13 +0200
+
+grub2-fll-fromiso (0.3.6) unstable; urgency=low
+
+  * slightly tune parser performance.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 17 Apr 2013 01:35:32 +0200
+
+grub2-fll-fromiso (0.3.5) unstable; urgency=low
+
+  * update FSF postal address to be URLs.
+  * bump standards version to 3.9.4, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 12 Jan 2013 03:02:06 +0100
+
+grub2-fll-fromiso (0.3.4) unstable; urgency=low
+
+  * optimise head crash, thanks to bfree.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Jun 2012 04:01:16 +0200
+
+grub2-fll-fromiso (0.3.3) unstable; urgency=medium
+
+  * cope with the revision number of ISO9660 (compared to udf) ISOs as
+    displayed by isoinfo.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Jun 2012 03:55:46 +0200
+
+grub2-fll-fromiso (0.3.2) unstable; urgency=low
+
+  * fix path generation for bind mounts under FLL_GRUB2_ISO_LOCATION.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Jun 2012 03:29:58 +0200
+
+grub2-fll-fromiso (0.3.1) unstable; urgency=low
+
+  * bump standards version to 3.9.3, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Feb 2012 16:38:52 +0100
+
+grub2-fll-fromiso (0.3.0) unstable; urgency=low
+
+  * switch from vol_id/ udev compatibility mode to native blkid invocations,
+    as these are deprecated in util-linux >= 2.21.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 19 Jan 2012 14:04:02 +0100
+
+grub2-fll-fromiso (0.2.16) unstable; urgency=low
+
+  * switch to compat level 9.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Jan 2012 01:34:12 +0100
+
+grub2-fll-fromiso (0.2.15) unstable; urgency=low
+
+  * changed dependencies to include the grub-efi variants.
+
+ -- Joaquim Boura <x-un-i@sapo.pt>  Sat, 03 Sep 2011 15:46:40 +0200
+
+grub2-fll-fromiso (0.2.14) unstable; urgency=low
+
+  * retry isoinfo without -J if it fails (xorriso + efi hates Joliet)
+  * numerically sort the isos
+  * fix a couple of comment typos
+
+ -- Niall Walsh <niallwalsh@celtux.org>  Tue, 05 Jul 2011 17:35:10 +0100
+
+grub2-fll-fromiso (0.2.13) unstable; urgency=low
+
+  * fixed typo when setting timezone cheat. (thks latino for noticing)
+
+ -- Joaquim Boura <x-un-i@sapo.pt>  Fri, 27 May 2011 19:16:00 +0200
+
+grub2-fll-fromiso (0.2.12) unstable; urgency=low
+
+  * bump standards version to 3.9.2, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Apr 2011 04:21:32 +0200
+
+grub2-fll-fromiso (0.2.11) unstable; urgency=low
+
+  * fix x-un-i's mail address.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Oct 2010 14:51:43 +0200
+
+grub2-fll-fromiso (0.2.10) unstable; urgency=low
+
+  * make isoinfo parsing more robust.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Sep 2010 19:41:16 +0200
+
+grub2-fll-fromiso (0.2.9) unstable; urgency=low
+
+  * adapt to aptosid.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 29 Aug 2010 04:21:51 +0200
+
+grub2-fll-fromiso (0.2.8) unstable; urgency=low
+
+  * switch to compat level 8.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Aug 2010 04:30:00 +0200
+
+grub2-fll-fromiso (0.2.7) unstable; urgency=low
+
+  * bump standards version to 3.9.1, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 03 Aug 2010 18:50:53 +0200
+
+grub2-fll-fromiso (0.2.6) unstable; urgency=low
+
+  * fix Vcs-Svn/ Vcs-Browser URI.
+  * hard depend on grub-pc, instead of merely enhancing it.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 25 May 2010 21:02:51 +0200
+
+grub2-fll-fromiso (0.2.5) unstable; urgency=low
+
+  * drop vga= kernel parameter, in the presence of KMS aware drivers it's
+    may break X.org.
+  * add explicit exit codes.
+  * rework comments.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 25 May 2010 20:59:41 +0200
+
+grub2-fll-fromiso (0.2.4) unstable; urgency=low
+
+  * switch to dpkg-source 3.0 (native) format.
+  * update copyright years.
+  * bump standards version to 3.8.4, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 25 Apr 2010 23:57:44 +0200
+
+grub2-fll-fromiso (0.2.3) unstable; urgency=low
+
+  * adding the module iso9660  makes fromiso also starting when the base HD
+    is an USB device.
+
+ -- Joaquim Boura <x-un-i@sapo.pt>  Sun, 10 Jan 2010 12:13:58 +0100
+
+grub2-fll-fromiso (0.2.2) unstable; urgency=low
+
+  * support ntfs and vfat, with their special UUID encodings due to klibc's
+    limited probing capabilities, for fromhd as well.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Dec 2009 17:55:14 +0100
+
+grub2-fll-fromiso (0.2.1) unstable; urgency=low
+
+  * don't fail if not all of the directories in FLL_GRUB2_ISO_LOCATION exist.
+  * in the light of KMS, don't force a framebuffer resolution and make it
+    optional as  part of FLL_GRUB2_CHEATCODE.
+  * minor spelling and documentation fixes.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Dec 2009 09:34:58 +0100
+
+grub2-fll-fromiso (0.2.0) unstable; urgency=low
+
+  * initialise prepare_boot_cache for grub2 stanzas.
+  * initial lvm2 support.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Dec 2009 08:56:14 +0100
+
+grub2-fll-fromiso (0.1.3) unstable; urgency=low
+
+  * another row of reality checks.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Dec 2009 08:05:33 +0100
+
+grub2-fll-fromiso (0.1.2) unstable; urgency=low
+
+  * sync documentation and reality.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Dec 2009 07:57:55 +0100
+
+grub2-fll-fromiso (0.1.1) unstable; urgency=low
+
+  * strip menuentry.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Dec 2009 07:51:44 +0100
+
+grub2-fll-fromiso (0.1.0) unstable; urgency=low
+
+  * add genisoimage to depends.
+  * add compatibility with >= Μόρος.
+  * remove temporary files.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Dec 2009 07:35:51 +0100
+
+grub2-fll-fromiso (0.0.1) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * Initial Release.
+
+  [ Joaquim Boura ]
+  * filling some useful code in
+  * remove dev defaults
+  * added myself to the copyrights holder
+
+ -- Joaquim Boura <x-un-i@sapo.pt>  Fri, 27 Nov 2009 23:26:36 +0100

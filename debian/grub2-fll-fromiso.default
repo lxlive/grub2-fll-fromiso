@@ -1,0 +1,27 @@
+# Defaults for grub2-fll-fromiso update-grub helper
+# sourced by grub2's update-grub
+# installed at /etc/default/grub2-fll-fromiso by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# specify where to look for the ISO
+# default: /srv/ISO
+#FLL_GRUB2_ISO_LOCATION="/srv/ISO"
+
+# array for defining ISO prefices --> lxqt-*.iso, non-recursive
+# default: "lxqt- fullstory-"
+#FLL_GRUB2_ISO_PREFIX="lxqt-"
+
+# set default language
+# default: en_US
+#FLL_GRUB2_LANG="de_DE"
+
+# override the default timezone.
+# default: UTC
+#FLL_GRUB2_TZ="Europe/Berlin"
+
+# additional cheatcodes
+# default: quiet systemd.show_status=1 noeject
+#FLL_GRUB2_CHEATCODE="quiet systemd.show_status=1 noeject"
